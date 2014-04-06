@@ -49,6 +49,6 @@ public class PexPromotions extends JavaPlugin {
     private boolean promotePlayer(Player plyr) {
         perm.playerRemoveGroup(plyr, getConfig().getString("from_group"));
         perm.playerAddGroup(plyr, getConfig().getString("to_group"));
-        return false;
+        return true;
     }
 }
