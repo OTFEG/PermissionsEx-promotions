@@ -23,6 +23,13 @@ public class PexPromotions extends JavaPlugin {
         }
     }
 
+    @Override
+    public void onDisable() {
+        // We set perm to null to clear the memory on plugin reload (/reload).
+        // This is a prevention measure if you never restart your server fully.
+        perm = null;
+    }
+
     private boolean setupPermissions() {
         RegisteredServiceProvider<Permission> permProvider = getServer().getServicesManager().getRegistration(net.milkbowl.vault.permission.Permission.class);
         if (permProvider != null) {
