@@ -9,11 +9,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 /**
  * PexPromotions - a promotions plugin that doesn't need PermissionsEx.
- * @author DSPhat
- *  ___  ___ ___ _         _
- * |   \/ __| _ \ |_  __ _| |_
- * | |) \__ \  _/ ' \/ _` |  _|
- * |___/|___/_| |_||_\__,_|\__|
+ * @author DSPhat - 2014
  */
 
 public class PexPromotions extends JavaPlugin {
