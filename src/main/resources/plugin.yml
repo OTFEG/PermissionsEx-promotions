@@ -1,0 +1,11 @@
+name: PermissionsEx-promotions
+author: DSPhat
+main: org.dsphat.pexpromotions.PexPromotions
+version: 1.0.0-R0.1
+
+depend: [Vault]
+
+commands:
+  accept:
+    description: Accepts the rules to the server
+    permission: pexpromotions.accept
