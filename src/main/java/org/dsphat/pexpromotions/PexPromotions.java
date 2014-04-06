@@ -7,6 +7,15 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
+/**
+ * PexPromotions - a promotions plugin that doesn't need PermissionsEx.
+ * @author DSPhat
+ *  ___  ___ ___ _         _
+ * |   \/ __| _ \ |_  __ _| |_
+ * | |) \__ \  _/ ' \/ _` |  _|
+ * |___/|___/_| |_||_\__,_|\__|
+ */
+
 public class PexPromotions extends JavaPlugin {
 
     public static Permission perm = null;
