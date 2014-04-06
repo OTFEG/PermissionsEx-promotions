@@ -25,8 +25,9 @@ public class PexPromotions extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // We set perm to null to clear the memory on plugin reload (/reload).
-        // This is a prevention measure if you never restart your server fully.
+        // We set perm to null on plugin disable (onDisable());
+        // This prevents potential memory leaks by freeing up the memory used by the
+        // 'perm' object.
         perm = null;
     }
 
