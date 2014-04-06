@@ -1,7 +1,5 @@
 package org.dsphat.pexpromotions;
 
-import java.util.logging.Logger;
-
 import net.milkbowl.vault.permission.Permission;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -12,12 +10,11 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class PexPromotions extends JavaPlugin {
 
     public static Permission perm = null;
-    private final Logger log = this.getLogger();
 
     @Override
     public void onEnable() {
         if (!setupPermissions()) {
-            log.severe(String.format("[%s] - Disabled due to no Vault dependency found!", getDescription().getName()));
+            getLogger().severe("Disabled due to no Vault dependency found!");
             getServer().getPluginManager().disablePlugin(this);
         }
     }
