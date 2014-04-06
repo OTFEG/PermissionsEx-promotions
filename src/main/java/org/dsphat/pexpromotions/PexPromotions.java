@@ -11,7 +11,6 @@ import org.bukkit.plugin.java.JavaPlugin;
  * PexPromotions - a promotions plugin that doesn't need PermissionsEx.
  * @author DSPhat - 2014
  */
-
 public class PexPromotions extends JavaPlugin {
 
     public static Permission perm = null;
